@@ -1,0 +1,6 @@
+com/blusalt/auth/model/ApiClient.class
+com/blusalt/auth/model/ApiClient$ApiClientBuilder.class
+com/blusalt/auth/security/SecurityConfig.class
+com/blusalt/auth/endpoint/AuthController.class
+com/blusalt/auth/repository/ApiClientRepo.class
+com/blusalt/auth/AuthServiceApplication.class
