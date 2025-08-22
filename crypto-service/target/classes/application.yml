@@ -1,0 +1,15 @@
+server:
+  port: 8092
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cryptodb
+    username: cryptouser
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+crypto:
+  # 256-bit base64 key to protect RSA private keys at rest
+  aesKey: 3d6X9LoyvA2YFZpA5rF4nOZflhXtbAq1Zgghn+HuWJ0=

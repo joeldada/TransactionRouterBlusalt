@@ -1,0 +1,7 @@
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/endpoint/AuthController.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/dto/CreateClientRequest.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/model/ApiClient.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/AuthServiceApplication.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/dto/ApiClientResponse.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/repository/ApiClientRepo.java
+/Users/joeldada/Documents/GitHub/blusalt/TransactionRouter/auth-service/src/main/java/com/blusalt/auth/security/SecurityConfig.java
