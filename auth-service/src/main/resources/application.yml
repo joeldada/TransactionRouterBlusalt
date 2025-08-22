@@ -1,0 +1,21 @@
+server:
+  port: 8091
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/authdb
+    username: authuser
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+security:
+  jwt:
+    issuer: txn-routing-auth
+    ttlSeconds: 3600
+    # RSA keypair for signing JWT (private) and publish JWK later if needed
+    privateKeyPem: |
+      -----BEGIN RSA PRIVATE KEY-----
+      MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCwU5KpgKmTsgSv/vOO7MMSrUFL6EdW3+JzyAzAW6owDhzja8QLeELROa/mHOovmrDmWzBLFQS44lAaYBKjinv/Y3I++suK4Ngt+m0PKhtY/cS39WGmOdz470mb1rqF3TdxwXMiSmVcSWxYrl2pWXNQpnLpQPfkJwrwgDh05fFd4bsy1MTcRsccdmnfEdPCZxBmDqZvo8kdj2rEPb15lniGJHqALfhLSQX9U5nAecH/5bfmatbwbmvAab/OQJNlA0x0T3hQel8YMg1hFWwjJ0aBL0JuHuIbitF6l+IJj1M5314ECeUEWY58Nggr1MF7IRRjg8C+9CC5yO9woaX3CvnxAgMBAAECggEAH5fR0vIdMDv40An33Nd6Oln1taKYSa4StpkVA9BIxZR5w5vXBBEXs8JIzIvIwB/Q621SUVmiP3g5TwiAvnG9Nuy8FyG7n5Ya1d4ldU6fmMnbWfSq+uwqNiY1w6jtQbf5y7WUKgQ3dhonwhn36TSAT2aLd1SvNd9y+9WViAh9P0s6s7RlKdcwIOuKDKiuF9JqxvO/sfIYg84Jr28FHI8GgFXkDFg7GNt9CnSOqPeSJfUHV61K3BF1LNEKwuXWschuaaxrtIwqFSs+xxjXz6EPM7FlKPuQWibYrU6za01Y/okgEL7GB0aVcUt8XUzLNCHVBiskHxDlreSXgs3LETWvCwKBgQDtUTgiDrHjb5nOPX1pJkjauMFUxfi+dOyaOuaAt4GoKbcPbBYuFq1f5D958veeuj7GFwHydMFAb2fcBIrWkkxg5wEedK2FqNw04NUsbBo8CvotGFT5ECuCfU6/6ASt7I+vk2HFh/0U94vYdyV/5ZtpL9hXM/+kxbR47ZU5TdE5JwKBgQC+NSxtpY7UTZZJ+0aMU0TtJbsjmoVZKrYepo+MeOnlpFoM7NKudixQBHESJ5uDBalx9rmkpwKdDtYOkCcXNUDDuA/OYCLRwO4NNW1CZa5UVyCxCqVrNuIQjvav9VV88JEJ/y9tBT+KMBa7FdDwWsc148wmuokefE81TpPSxEOzJwKBgDZF+NxxF+W3xCkSjvfZNZgv4KcOj5CfFO1Awy50yUY4JBF22qu3q/beMFYnZtH6LhkHcf6NDRU7ZTlAILBpzOXsbqkUbgq/T30YXihGoMlSiVx+0BAVzp2NItFosolELKguwJF4RDzjUCw1M3JIhH5N3uAymCiKvndZfmMYlNzJAoGAQ8wwSeT5RDNjnnsyalJD/0OzsL0jSuUuhT5ZbHis5m3uqyy+6/CzWtI6e34isFEUVMrc4ROmmtTu98HqLRuOOjUhbS5XOuzJ7Wtdxoz31pg3zuM8kzq82aobxBxunFojWKzc+r8kJt19PLJKB2JUH6FS43sZ5QPqN9YKWtYaS4ECgYEApehw/k/Uu0V7w8EfrM8odkgKjJUZPSzImF1S+RBdZHYFsTukF74IbXs2TuG5TFCTpDILDdSy4uoU70XjsDQNSeiok8FKZmHMPzl+7N+tFuLi/ZLS1nUdzjHhpBhpz2Rshz1nmvYN+yVPBgT8ZJqeJnQx/K9V6resQ37VJwiss0M=
+      -----END RSA PRIVATE KEY-----
