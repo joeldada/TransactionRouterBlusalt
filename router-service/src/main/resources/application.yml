@@ -1,0 +1,21 @@
+server:
+  port: 8093
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/routerdb
+    username: routeruser
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+security:
+  jwt:
+    issuer: txn-routing-auth
+    publicKeyPem: |
+      -----BEGIN PUBLIC KEY-----
+      MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsFOSqYCpk7IEr/7zjuzDEq1BS+hHVt/ic8gMwFuqMA4c42vEC3hC0Tmv5hzqL5qw5lswSxUEuOJQGmASo4p7/2NyPvrLiuDYLfptDyobWP3Et/Vhpjnc+O9Jm9a6hd03ccFzIkplXElsWK5dqVlzUKZy6UD35CcK8IA4dOXxXeG7MtTE3EbHHHZp3xHTwmcQZg6mb6PJHY9qxD29eZZ4hiR6gC34S0kF/VOZwHnB/+W35mrW8G5rwGm/zkCTZQNMdE94UHpfGDINYRVsIydGgS9Cbh7iG4rRepfiCY9TOd9eBAnlBFmOfDYIK9TBeyEUY4PAvvQgucjvcKGl9wr58QIDAQAB
+      -----END PUBLIC KEY-----
+crypto:
+  baseUrl: http://localhost:8092
